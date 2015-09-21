@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage[hscale=0.9, vscale=0.9]{geometry}
+\usepackage[at]{easylist}% easy lists with @ starting each item
+
+\begin{document}
+
+\title{Chapter 1}
+\author{Emil Maric}
+\maketitle
+
+\begin{easylist}
+ 	\ListProperties(
+ 		Start1=1,
+	  	Style1*=\bfseries,
+	  	Style2*=\bfseries,
+	  	Numbers2=l,
+	  	Mark1={},
+	  	Mark2={.},
+	  	FinalMark1={.},
+	  	Space1=1cm,
+	  	Space1*=1cm,
+	)
+  
+ 	@
+ 	@@ \begin{itemize}
+ 			\item \textbf{Confidentiality:} Preventing unauthorized reading of information.
+ 			\item \textbf{Integrity:} Preventing, or at least detecting unauthorized changes to data.
+ 			\item \textbf{Availability:} Enabling access to data and resources.
+ 		\end{itemize}
+ 	@@ Browser history
+ 	@@ Bank account balance
+ 	@@ Financial Services
+
+ 	@ From a bank's perspective, integrity is more important. From a customer's perspective, confidentiality is more important.%
+ 	
+ 	@
+ 	@@ Confidentiality is important to protect the financial information of the users.
+ 	@@ Integrity is necessary so that Alice can ensure the financial information is correct, and that the user's chess ranking is also correct.
+ 	@@ Availability is important so that Alice can make money from people visiting her site.
+ 	
+ 	@
+ 	@@ Cryptography should be used in protecting the user's password and financial informaiton.
+ 	@@ Access Control should be used for the login page to determine if the entered credentials are correct, and to distinguish between a regular user and site admin. Also to distinguish between a paying customer and non-paying.
+ 	@@ Security protocols would be used at the login page to securely use the entered information to query the user database to verify the credentials. They would also be used to setup a secure chess match between two players. Finally, they would also be used monthly to securely credit users' for their subscription.
+ 	@@ Yes, because a flaw in the software security means that that someone could potentially exploit the system to gain access to user's financial information, which would compromise the confidentiality of AOC. Also, a security flaw could potentially change user's stats, which would compromise the integrity of the service. Also, a security flaw could potentially bring the site down, compromising the availability of the site.
+ 
+ 	@
+ 	@@ Privacy is a real-world concern when accessing your finances online.
+ 	@@ Using your financial information to register for services such as eBay, Amazon, etc.
+ 	
+ 	@
+ 	@@ Using an RFID tag in a passport as an example, if someone was near enough to you with an RFID reader, they could read your passport information.
+ 	@@ Unauthorized access using RFID tags.
+ 	
+ 	@
+ 	@@ Login pages for services; if you have access to a user's account, there is usually no further security layers to prevent you from stealing all their information or compromising the integrity of the account.
+ 	@@ Properly hashed passwords in a database using a unique salt. You have to bruteforce each password individually.
+ 	
+ 	@ Skipped
+ 	
+ 	@ Skipped
+ 	
+ 	@
+ 	@@ Use a different cipher and provide false information.
+ 	@@ They either didn't realize it was broken, or they underestimated the compromise. Also, they may have realized that the engima was fully cracked, and decided to use it to provide false information.
+ 	
+ 	@
+ 	@@ Finger-based authentication.
+ 	@@ Key card
+ 	@@ G-mail uses 2-factor authentication. It uses your password (something you know), as well as sending you a text or e-mail message with another 6 digit key (something you have).
+ 	
+ 	@
+ 	@@ Creating an account on a website. You have to type in the letters/numbers that appear in the CAPTCHA image.
+ 	@@ A program that can read letters/numbers from an image and automatically create the account.
+ 	@@ Brute force.
+ 	@@ Pretty good.
+ 	@@ Sometimes the images suck.
+ 	
+ 	@
+ 	@@ This is neither user-friendly (because the user doesn't know that the transaction failed) nor secure.
+ 	@@ This is user-friendly for Alice, however not for Bob, but ideally the transcation should terminate if the protocol fails.
+ 	@@ This is both user-friendly, as both parties know the transaction failed, and also secure, since the transaction terminates when the protocol fails.
+ 	@@ This is secure, but not user-friendly, since neither Alice nor Bob know that the transaction was terminated.
+ 	
+ 	@
+ 	@@ No thanks
+ 	@@ Stealing the ATM machine itself, and breaking it open in a secure and hidden location.
+ 	
+ 	@
+ 	@@ Other malicious users can exploit the flaws to compromise Alice and Bob's accounts.
+ 	@@ Trudy can use the bad software to exploit the system for personal gains.
+ 	@@ Explained above.
+ 	
+ 	@
+ 	@@ No never, my computer is the best.
+ 	@@ It can send data from your computer to the malicious user, specifically saved financial information.
+ 	
+ 	@
+ 	@@ No thanks
+ 	@@ I never watched the movie
+ 	
+ 	@
+ 	@@ Windows OS
+ 	@@ Brew
+ 	@@ Look at the source code for bugs that are exploitable
+ 	@@ Do a analysis and try to find potential bugs.
+ 	@@ File bugs for any errors she notices.
+ 	@@ Same thing as above.
+ 	@@ Closed source because the source code is not publicly available.
+ 	
+ 	@
+ 	@@ US health care website
+ 	@@ Heartbleed bug (OpenSSL)
+ 	
+ 	@
+ 	@@ If it's sold online, one person could buy it and then distribute it online for free
+ 	@@ Use a pay system with a good reputation, such as PayPal. Also, make the book tied in with an account, so it can only be opened in an online app.
+ 	@@ Someone could still make a PDF from the book on their own and distribute it that way. It would require a lot of work if there were many pages.
+ 
+\end{easylist}
+
+\end{document}
