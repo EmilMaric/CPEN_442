@@ -19,103 +19,160 @@
 	  	FinalMark1={.},
 	  	Space1=1cm,
 	  	Space1*=1cm,
+	  	Space2*=0.1cm,
 	)
   
- 	@
- 	@@ \begin{itemize}
+ 	@  \textbf{Among the fundamental challenges in information security are confidentiality, integrity, and availability, or CIA.}\\
+ 	@@ \textbf{Define each of these terms: confidentiality, integrity, availability.}
+ 		\begin{itemize}
  			\item \textbf{Confidentiality:} Preventing unauthorized reading of information.
  			\item \textbf{Integrity:} Preventing, or at least detecting unauthorized changes to data.
  			\item \textbf{Availability:} Enabling access to data and resources.
  		\end{itemize}
- 	@@ Browser history
- 	@@ Bank account balance
- 	@@ Financial Services
+ 	@@ \textbf{Give a concrete example where confidentiality is more important than integrity.}\\
+ 		Browser history
+ 	@@ \textbf{Give a concrete example where integrity is more important than confidentiality.}\\
+ 		Bank account balance
+ 	@@ \textbf{Give a concrete example where availability is the overriding concern.}\\
+ 		Financial Services
 
- 	@ From a bank's perspective, integrity is more important. From a customer's perspective, confidentiality is more important.%
+ 	@ \textbf{From a bank' s perspective, which is usually more important, the integrity of its customer's data or the confidentiality of the data? From the perspective of the bank' s customers, which is more important?}\\
+ 		From a bank's perspective, integrity is more important. From a customer's perspective, confidentiality is more important.%
  	
- 	@
- 	@@ Confidentiality is important to protect the financial information of the users.
- 	@@ Integrity is necessary so that Alice can ensure the financial information is correct, and that the user's chess ranking is also correct.
- 	@@ Availability is important so that Alice can make money from people visiting her site.
+ 	@ \textbf{Instead of an online bank, suppose that Alice provides an online chess playing service known as Alice's Online Chess (AOC). Players, who pay a monthly fee, log into AO C where they are matched with another player of comparable ability.}\\
+ 	@@ \textbf{Where (and why) is confidentiality important for AO C and its
+customers?}\\
+ 		Confidentiality is important to protect the financial information of the users.
+ 	@@ \textbf{Why is integrity necessary?}\\
+ 		Integrity is necessary so that Alice can ensure the financial information is correct, and that the user's chess ranking is also correct.
+ 	@@ \textbf{Why is availability an important concern?}\\
+ 		Availability is important so that Alice can make money from people visiting her site.
  	
- 	@
- 	@@ Cryptography should be used in protecting the user's password and financial informaiton.
- 	@@ Access Control should be used for the login page to determine if the entered credentials are correct, and to distinguish between a regular user and site admin. Also to distinguish between a paying customer and non-paying.
- 	@@ Security protocols would be used at the login page to securely use the entered information to query the user database to verify the credentials. They would also be used to setup a secure chess match between two players. Finally, they would also be used monthly to securely credit users' for their subscription.
- 	@@ Yes, because a flaw in the software security means that that someone could potentially exploit the system to gain access to user's financial information, which would compromise the confidentiality of AOC. Also, a security flaw could potentially change user's stats, which would compromise the integrity of the service. Also, a security flaw could potentially bring the site down, compromising the availability of the site.
+ 	@ \textbf{Instead of an online bank, suppose that Alice provides an online chess playing service known as Alice's Online Chess (AOC). Players, who pay a monthly fee, log into AOC where they are matched with another player of comparable ability.}\\
+ 	@@ \textbf{Where should cryptography be used in AOC?}\\
+ 		Cryptography should be used in protecting the user's password and financial information.
+ 	@@ \textbf{Where should access control used?}\\
+ 		Access Control should be used for the login page to determine if the entered credentials are correct, and to distinguish between a regular user and site admin. Also to distinguish between a paying customer and non-paying.
+ 	@@ \textbf{Where would security protocols be used?}\\
+ 		Security protocols would be used at the login page to securely use the entered information to query the user database to verify the credentials. They would also be used to setup a secure chess match between two players. Finally, they would also be used monthly to securely credit users' for their subscription.
+ 	@@ \textbf{Is software security a concern for AOC? Why or why not?}\\
+ 		Yes, because a flaw in the software security means that that someone could potentially exploit the system to gain access to user's financial information, which would compromise the confidentiality of AOC. Also, a security flaw could potentially change user's stats, which would compromise the integrity of the service. Also, a security flaw could potentially bring the site down, compromising the availability of the site.
  
- 	@
- 	@@ Privacy is a real-world concern when accessing your finances online.
- 	@@ Using your financial information to register for services such as eBay, Amazon, etc.
+ 	@ \textbf{Some authors distinguish between secrecy, privacy, and confidentiality. In this usage, secrecy is equivalent to our use of the term confidentiality, whereas privacy is secrecy applied to personal data, and confidentiality (in this misguided sense) refers to an obligation not to divulge certain information.}\\
+ 	@@ \textbf{Discuss a real-world situation where privacy is an important security issue.}\\
+ 		Privacy is a real-world concern when accessing your finances online.
+ 	@@ \textbf{Discuss a real-world situation where confidentiality (in this incorrect sense) is a critical security issue.}\\
+ 		Using your financial information to register for services such as eBay, Amazon, etc.
  	
- 	@
- 	@@ Using an RFID tag in a passport as an example, if someone was near enough to you with an RFID reader, they could read your passport information.
- 	@@ Unauthorized access using RFID tags.
+ 	@ \textbf{RFID tags are extremely small devices capable of broadcasting a number over the air that can be read by a nearby sensor. RFID tags are used for tracking inventory, and they have many other potential uses. For example, RFID tags are used in passports and it has been suggested that they should be put into paper money to prevent counterfeiting. In the future, a person might be surrounded by a cloud of RFID numbers that would provide a great deal of information about the person.}\\
+ 	@@ \textbf{Discuss some privacy concerns related to the widespread use of RFID tags.}\\
+ 		Using an RFID tag in a passport as an example, if someone was near enough to you with an RFID reader, they could read your passport information.
+ 	@@ \textbf{Discuss security issues, other than privacy, that might arise due to the widespread use of RFID tags.}\\
+ 		Unauthorized access using RFID tags.
  	
- 	@
- 	@@ Login pages for services; if you have access to a user's account, there is usually no further security layers to prevent you from stealing all their information or compromising the integrity of the account.
- 	@@ Properly hashed passwords in a database using a unique salt. You have to bruteforce each password individually.
+ 	@ \textbf{Cryptography is sometimes said to be brittle, in the sense that it can be very strong, but when it breaks, it (generally) completely shatters. In contrast, some security features can "bend" without breaking completely—security may be lost as a result of the bending, but some useful level of security remains.}\\
+ 	@@ \textbf{Other than cryptography, give an example where security is brittle.}\\
+ 		Login pages for services; if you have access to a user's account, there is usually no further security layers to prevent you from stealing all their information or compromising the integrity of the account.
+ 	@@ \textbf{Provide an example where security is not brittle, that is, the security can bend without completely breaking.}\\
+ 		Properly hashed passwords in a database using a unique salt. You have to bruteforce each password individually.
  	
- 	@ Skipped
+ 	@ \textbf{Read Diffie and Hellman's classic paper.}\\
+ 		Skipped
  	
- 	@ Skipped
+ 	@ \textbf{The most famous World War II cipher machine was the German Enigma (see also Problem 10).}\\
+ 		Skipped
  	
- 	@
- 	@@ Use a different cipher and provide false information.
- 	@@ They either didn't realize it was broken, or they underestimated the compromise. Also, they may have realized that the engima was fully cracked, and decided to use it to provide false information.
+ 	@ \textbf{The German Enigma is the most famous World War II cipher machine (see also Problem 9). The cipher was broken by the Allies and intelligence gained from Enigma messages proved invaluable. At first, the Allies were very careful when using the information gained from broken Enigma messages—sometimes the Allies did not use information that could have given them an advantage. Later in the war, however, the Allies (in particular, the Americans) were much less careful, and they tended to use virtually all information obtained from broken Enigma messages.}\\
+ 	@@ \textbf{The Allies were cautious about using information gained from broken Enigma messages for fear that the Germans would realize the cipher was broken. Discuss two different approaches that the Germans might have taken if they had realized that the Enigma was broken.}\\
+ 		Use a different cipher and provide false information.
+ 	@@ \textbf{At some point in the war, it should have become obvious to the Germans that the Enigma was broken, yet the Enigma was used until the end of the war. Why did the Nazis continue to use the Enigma?}\\
+ 		They either didn't realize it was broken, or they underestimated the compromise. Also, they may have realized that the engima was fully cracked, and decided to use it to provide false information.
  	
- 	@
- 	@@ Finger-based authentication.
- 	@@ Key card
- 	@@ G-mail uses 2-factor authentication. It uses your password (something you know), as well as sending you a text or e-mail message with another 6 digit key (something you have).
+ 	@ \textbf{When you want to authenticate yourself to your computer, most likely you type in your username and password. The username is considered public knowledge, so it is the password that authenticates you. Your password is something you know.}\\
+ 	@@ \textbf{It is also possible to authenticate based on something you are, that is, a physical characteristic. Such a characteristic is known as a biometrie. Give an example of biometric-based authentication.}\\
+ 		Finger-based authentication.
+ 	@@ \textbf{It is also possible to authenticate based on something you have, that is, something in your possession. Give an example of authentication based on something you have.}\\
+ 		Key card
+ 	@@ \textbf{Two-factor authentication requires that two of the three authentication methods (something you know, something you have, something you are) be used. Give an example from everyday life where two-factor authentication is used. Which two of the three are used?}\\
+ 		G-mail uses 2-factor authentication. It uses your password (something you know), as well as sending you a text or e-mail message with another 6 digit key (something you have).
  	
- 	@
- 	@@ Creating an account on a website. You have to type in the letters/numbers that appear in the CAPTCHA image.
- 	@@ A program that can read letters/numbers from an image and automatically create the account.
- 	@@ Brute force.
- 	@@ Pretty good.
- 	@@ Sometimes the images suck.
+ 	@ \textbf{CAPTCHAs are often used in an attempt to restrict access to humans (as opposed to automated processes).}\\
+ 	@@ \textbf{Give a real-world example where you were required to solve a CAPTCHA to gain access to some resource. What do you have to do to solve the CAPTCHA?}\\
+ 		Creating an account on a website. You have to type in the letters/numbers that appear in the CAPTCHA image.
+ 	@@ \textbf{Discuss various technical methods that might be used to break the CAPTCHA you described in part a.}\\
+ 		A program that can read letters/numbers from an image and automatically create the account.
+ 	@@ \textbf{Outline a non-technical method that might be used to attack the CAPTCHA from part a.}\\
+ 		Brute force.
+ 	@@ \textbf{How effective is the CAPTCHA in part a? How user-friendly is the CAPTCHA?}\\
+ 		Pretty good.
+ 	@@ \textbf{Why do you hate CAPTCHAs?}\\
+ 		Sometimes the images suck.
  	
- 	@
- 	@@ This is neither user-friendly (because the user doesn't know that the transaction failed) nor secure.
- 	@@ This is user-friendly for Alice, however not for Bob, but ideally the transcation should terminate if the protocol fails.
- 	@@ This is both user-friendly, as both parties know the transaction failed, and also secure, since the transaction terminates when the protocol fails.
- 	@@ This is secure, but not user-friendly, since neither Alice nor Bob know that the transaction was terminated.
+ 	@ \textbf{Suppose that a particular security protocol is well designed and secure. However, there is a fairly common situation where insufficient information is available to complete the security protocol. In such cases, the protocol fails and, ideally, a transaction between the participants, say, Alice and Bob, should not be allowed to occur. However, in the real world, protocol designers must decide how to handle cases where protocols fail. As a practical matter, both security and convenience must be considered. Comment on the relative merits of each of the following solutions to protocol failure. Be sure to consider both the relative security and user-friendliness of each.}\\
+ 	@@ \textbf{When the protocol fails, a brief warning is given to Alice and Bob, but the transaction continues as if the protocol had succeeded, without any intervention required from either Alice or Bob.}\\
+ 		This is neither user-friendly (because the user doesn't know that the transaction failed) nor secure.
+ 	@@ \textbf{When the protocol fails, a warning is given to Alice and she decides (by clicking a checkbox) whether the transaction should continue or not.}\\
+ 		This is user-friendly for Alice, however not for Bob, but ideally the transcation should terminate if the protocol fails.
+ 	@@ \textbf{When the protocol fails, a notification is given to Alice and Bob and the transaction terminates.}\\
+ 		This is both user-friendly, as both parties know the transaction failed, and also secure, since the transaction terminates when the protocol fails.
+ 	@@ \textbf{When the protocol fails, the transaction terminates with no explanation given to Alice or Bob.}\\
+ 		This is secure, but not user-friendly, since neither Alice nor Bob know that the transaction was terminated.
  	
- 	@
- 	@@ No thanks
- 	@@ Stealing the ATM machine itself, and breaking it open in a secure and hidden location.
+ 	@ \textbf{Automatic teller machines (ATMs) are an interesting case study in security. Anderson [14] claims that when ATMs were first developed, most attention was paid to high-tech attacks. However, most real-world attacks on ATMs have been decidedly low tech.}\\
+ 	@@ \textbf{Examples of high-tech attacks on ATMs would be breaking the encryption or authentication protocol. If possible, find a real-world case where a high-tech attack on an ATM has actually occurred and provide the details.}\\
+ 		No thanks
+ 	@@ \textbf{Shoulder surfing is an example of a low-tech attack. In this scenario, Trudy stands behind Alice in line and watches the numbers Alice presses when entering her PIN. Then Trudy bonks Alice in the head and takes her ATM card. Give another example of a low-tech attack on an ATM that has actually occurred.}\\
+ 		Stealing the ATM machine itself, and breaking it open in a secure and hidden location.
  	
- 	@
- 	@@ Other malicious users can exploit the flaws to compromise Alice and Bob's accounts.
- 	@@ Trudy can use the bad software to exploit the system for personal gains.
- 	@@ Explained above.
+ 	@ \textbf{Large and complex software systems invariably have a large number of bugs.}\\
+ 	@@ \textbf{For honest users, such as Alice and Bob, buggy software is certainly annoying but why is it a security issue?}\\
+ 		Other malicious users can exploit the flaws to compromise Alice and Bob's accounts.
+ 	@@ \textbf{Why does Trudy love buggy software?}\\
+ 		Trudy can use the bad software to exploit the system for personal gains.
+ 	@@ \textbf{In general terms, how might Trudy use bugs in software to break the security of a system?}\\
+ 		Explained above.
  	
- 	@
- 	@@ No never, my computer is the best.
- 	@@ It can send data from your computer to the malicious user, specifically saved financial information.
+ 	@ \textbf{Malware is software that is intentionally malicious, in the sense that it is designed to do damage or break the security of a system. Malware comes in many familiar varieties, including viruses, worms, and Trojans.}\\
+ 	@@ \textbf{Has your computer ever been infected with malware? If so, what did the malware do and how did you get rid of the problem? If not, why have you been so lucky?}\\
+ 		No never, my computer is the best.
+ 	@@ \textbf{In the past, most malware was designed to annoy users. Today, it is often claimed that most malware is written for profit. How could malware possibly be profitable?}\\
+ 		It can send data from your computer to the malicious user, specifically saved financial information.
  	
- 	@
- 	@@ No thanks
- 	@@ I never watched the movie
+ 	@ \textbf{In the movie Office Space, software developers attempt to modify company software so that for each financial transaction, any leftover fraction of a cent goes to the developers, instead of going to the company. The idea is that for any particular transaction, nobody will notice the missing fraction of a cent, but over time the developers will accumulate a large sum of money. This type of attack is sometimes known as a salami attack.}\\
+ 	@@ \textbf{Find a real-world example of a salami attack.}\\
+ 		No thanks
+ 	@@ \textbf{In the movie, the salami attack fails. Why?}\\
+ 		I never watched the movie
  	
- 	@
- 	@@ Windows OS
- 	@@ Brew
- 	@@ Look at the source code for bugs that are exploitable
- 	@@ Do a analysis and try to find potential bugs.
- 	@@ File bugs for any errors she notices.
- 	@@ Same thing as above.
- 	@@ Closed source because the source code is not publicly available.
+ 	@ \textbf{Some commercial software is closed source, meaning that the source code is not available to users. On the other hand, some software is open source, meaning that the source code is available to users.}\\
+ 	@@ \textbf{Give an example of software that you use (or have used) that is closed source.}\\
+ 		Windows OS
+ 	@@ \textbf{Give an example of software that you use (or have used) that is open source.}\\
+ 		Brew
+ 	@@ \textbf{For open source software, what can Trudy do to search for security flaws in the software?}\\
+ 		Look at the source code for bugs that are exploitable
+ 	@@ \textbf{For closed source software, what can Trudy do to search for security flaws in the software?}\\
+ 		Do a analysis and try to find potential bugs.
+ 	@@ \textbf{For open source software, what can Alice do to make the software more secure?}\\
+ 		File bugs for any errors she notices.
+ 	@@ \textbf{For closed source software, what can Alice do to make the software more secure?}\\
+ 		Same thing as above.
+ 	@@ \textbf{Which is inherently more secure, open source software or closed source software? Why?}\\
+ 		Closed source because the source code is not publicly available.
  	
- 	@
- 	@@ US health care website
- 	@@ Heartbleed bug (OpenSSL)
+ 	@ \textbf{It's sometimes said that complexity is the enemy of security.}\\
+ 	@@ \textbf{Give an example of commercial software to which this statement applies, that is, find an example of software that is large and complex and has had significant security problems.}\\
+ 		US health care website
+ 	@@ \textbf{Find an example of a security protocol to which this statement applies.}\\
+ 		Heartbleed bug (OpenSSL)
  	
- 	@
- 	@@ If it's sold online, one person could buy it and then distribute it online for free
- 	@@ Use a pay system with a good reputation, such as PayPal. Also, make the book tied in with an account, so it can only be opened in an online app.
- 	@@ Someone could still make a PDF from the book on their own and distribute it that way. It would require a lot of work if there were many pages.
+ 	@ \textbf{Suppose that this textbook was sold online (as a PDF) by your money grubbing author for, say, \$5. Then the author would make more money off of each copy sold than he currently does and people who purchase the book would save a lot of money.}\\
+ 	@@ \textbf{What are the security issues related to the sale of an online book?}\\
+ 		If it's sold online, one person could buy it and then distribute it online for free
+ 	@@ \textbf{How could you make the selling of an online book more secure, from the copyright holder's perspective?}\\
+ 		Use a pay system with a good reputation, such as PayPal. Also, make the book tied in with an account, so it can only be opened in an online app.
+ 	@@ \textbf{How secure is your approach in part b? What are some possible attacks on your proposed system?}\\
+ 		Someone could still make a PDF from the book on their own and distribute it that way. It would require a lot of work if there were many pages.
  
 \end{easylist}
 
