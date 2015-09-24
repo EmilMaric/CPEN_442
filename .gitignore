@@ -24,3 +24,5 @@
 *.synctex.gz
 
 *.DS_Store
+*.swp
+*.swo

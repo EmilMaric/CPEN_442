@@ -1,0 +1,11 @@
+1. Assume "eyk" is equal to "the"
+2. Next try to solve for "L", which is most commonly occuring letter in chipertext. Assume "L" is equal to "a". This was false because a "aa" sequence showed up in the text, which is pretty much impossible in the english language.
+3. Next assume "L" is "o". This seemed to work well. No issues.
+4. Next assume "M" is "a", since its frequently occuring letter. No issues.
+5. Since "MIX" is commonly occuring. Assume its "and"
+5. Assume "TT" is "ss". Some issues with words that don't make sense.
+6. Assume "O" is "r" to make the word "heard".
+7. Assume "F" is "i" becuase it is a high frequency letter.
+8. Assume "D" is "c" to form word 'child'
+9. Assume "H" is 'y' to form word 'only'
+10. Assume text starts with "frodo only a child".
