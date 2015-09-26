@@ -26,3 +26,10 @@
 *.DS_Store
 *.swp
 *.swo
+
+# problem 2
+Assignments/Assignment_2/problem2/playfair_solver
+Assignments/Assignment_2/problem2/playfair_solver.dSYM
+Assignments/Assignment_2/problem2/results.txt
+Assignments/Assignment_2/problem2/tetragram_builder
+Assignments/Assignment_2/problem2/tetragram_builder.dSYM
