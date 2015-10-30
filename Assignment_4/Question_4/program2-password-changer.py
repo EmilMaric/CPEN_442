@@ -15,6 +15,7 @@ def password_changer(password):
     with open('program2.exe', 'r+b') as f:
         f.seek(PASSWORD_OFFSET)
         f.write(hashed_password.digest())
+    print("Password changed successfully!")
 
 
 if __name__ == '__main__':
