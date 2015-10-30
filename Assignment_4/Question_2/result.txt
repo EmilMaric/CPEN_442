@@ -1,2 +1,2 @@
-Password: CSy%jtqf
-CPU Time: 
+Password: y%jtqf
+GPU/CPU Time: 3 mins, 30 secs (70,748,995,584 combinations tried)
