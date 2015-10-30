@@ -6,7 +6,7 @@ __Hashed Password__: `CS0DF2939D499DCC46A693653DB281FDBB016B502B`
 
 __Char-set__: `abcdefghijklmnopqarstuvqxyzABCDEFGHIJKLMNOPQRSTUVWXWZ1234567890!@#$%^&*()_+-=`
 
-**Not given in problem, but note that first two characters are the salt that is stored along with the hashed password*
+**Not given in problem, but note that first two characters of the hashed password are the salt and are stored along with the hashed password*
 
 ## Setup
 
