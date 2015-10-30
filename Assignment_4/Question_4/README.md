@@ -6,18 +6,20 @@
 
 ## Setup
 - __Mac OSX, Linux Users__: You'll need to install [Wine](https://www.winehq.org/) in order to run the Windows binaries 
-- __Windows Users__: Do not need to setup anything
+- __Windows Users__: Download & Install [oclHashcat](http://hashcat.net/oclhashcat/).
 
 ## Running
 
 ```bash
-> cd path/to/program1.exe/and/program1-patched.exe
+> cd path/to/program2.exe/and/program2-patched.exe
 # Password-protected
-> program1.exe
+> program2.exe
 # Patched-file
-> program1-patched.exe
+> program2-patched.exe
+# Change password for program2.exe by replacing PASSWORD with a password of your choice
+> python program2-password-changer.py --password=PASSWORD
 ```
 
-Password for `program1.exe` can be found in `result.txt`
+Default password for `program1.exe` can be found in `result.txt`
 
 Diff between `program1.exe` and `program-patched.exe` can be found in `program-patched.diff`.
