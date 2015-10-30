@@ -3,7 +3,8 @@
 Find the required password from the application `program1.exe` for successfull authentication. Also devise a patch so that the application will accept any password and store it as `program1-patched.exe`. 
 
 ## Setup
-If you're running the programs on Mac OSX or Linux, you'll need to install [Wine](https://www.winehq.org/). Windows users do not need to setup anything.
+- __Mac OSX, Linux Users__: You'll need to install [Wine](https://www.winehq.org/) in order to run the Windows binaries 
+- __Windows Users__: Do not need to setup anything
 
 ## Running
 
