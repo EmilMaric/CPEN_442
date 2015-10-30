@@ -20,6 +20,6 @@
 > python program2-password-changer.py --password=PASSWORD
 ```
 
-Default password for `program1.exe` can be found in `result.txt`
+Default password for `program2.exe` can be found in `result.txt`
 
-Diff between `program1.exe` and `program-patched.exe` can be found in `program-patched.diff`.
+Diff between `program2.exe` and `program2-patched.exe` can be found in `program2-patched.diff`.
