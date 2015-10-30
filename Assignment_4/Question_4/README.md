@@ -1,7 +1,8 @@
-# `Question 3`
+# `Question 4`
 
-- Find the required password from the application `program1.exe` for successfull authentication. 
-- Devise a patch so that the application will accept any password and store it as `program1-patched.exe`. 
+- Find the required password from the application `program2.exe` for successfull authentication.
+- Devise a patch so that the application will accept any password and store it as `program2-patched.exe`. 
+- Create a script/patch or application that allows you to replace password with any password, and store it as `program2-password-changer.py`
 
 ## Setup
 - __Mac OSX, Linux Users__: You'll need to install [Wine](https://www.winehq.org/) in order to run the Windows binaries 
