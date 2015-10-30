@@ -19,3 +19,5 @@ I've only tested this on Windows with oclHashcat.
 # For 32-bit machines, replace cudaHashcat64.exe with cudaHashcat32.exe
 > cudaHashcat64.exe -a 3 -m 110 path/to/pwd1.txt ?d?d?d?d
 ```
+
+Results are stored in `result.txt`.
