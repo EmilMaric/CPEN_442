@@ -2,8 +2,7 @@
 
 The following is a hashed password. Passwords are 6 characters long and include any character from the given char-set. Find the password given the following hash.
 
-__Hashed Password__: `CS0DF2939D499DCC46A693653DB281FDBB016B502B`
-
+__Hashed Password__: `CS0DF2939D499DCC46A693653DB281FDBB016B502B`</br>
 __Char-set__: `abcdefghijklmnopqarstuvqxyzABCDEFGHIJKLMNOPQRSTUVWXWZ1234567890!@#$%^&*()_+-=`
 
 **Not given in problem, but note that first two characters of the hashed password are the salt and are stored along with the hashed password*
