@@ -2,7 +2,7 @@
 
 The following is a hashed password. The password is similar to what is used for debit and credit cards or for locking phones, and it is a 4-digit password. Find the password given the following hash.
 
-Hashed Password: `LTF6A2CBE86F0354722C9B377E9E187885D1DE6B5D`
+__Hashed Password__: `LTF6A2CBE86F0354722C9B377E9E187885D1DE6B5D`
 
 **Not given in problem, but note that first two characters are the salt that is stored along with the hashed password*
 
