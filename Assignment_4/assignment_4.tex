@@ -138,9 +138,9 @@ I noticed that my hashed input string was being compared with a string located a
 
 \begin{figure}[h]
 \includegraphics[width=\columnwidth]{image5.jpg}
-\caption{Password comparison compared }
+\caption{My hashed input being compared with the hashed password. Also shows the instruction that I patched}
 \centering
-\end{figure}\mbox{}
+\end{figure}\mbox{}\\
 
 To patch the program, I changed the value of \texttt{\%ebp $+$ var\_29} to always be \texttt{1}. \textbf{Fig. 5} highlights where I changed the value of this variable from \texttt{0} to \texttt{1}. This allowed the program to always grant access, regardless of whether the password was correct or not.\\
 
